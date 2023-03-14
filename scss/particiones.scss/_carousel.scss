@@ -1,0 +1,19 @@
+/* Carousel*/
+
+.carrousel-container{
+    background: $gradient_bc3;
+    .carousel-inner{
+        box-shadow: 3px -1px 61px 9px rgba(219,216,227,0.88);
+        -webkit-box-shadow: 3px -1px 61px 9px rgba(219,216,227,0.88);
+        -moz-box-shadow: 3px -1px 61px 9px rgba(219,216,227,0.88);
+
+        .carousel-item img{
+            max-height: 600px; 
+        }
+    }
+}
+
+.carousel-control-prev-icon .carousel-control-next-icon{
+    font-weight: 700;
+}
+

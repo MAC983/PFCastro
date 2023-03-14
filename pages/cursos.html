@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../scss/styles.css">
     <!-- <link rel="stylesheet" href="../css/backup.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/> -->
     <title>GC-GeekCode</title>
@@ -143,14 +143,13 @@
 
         <section class="price contenedor about">
             <h2 class="subtitle">Obten el plan perfecto para aprender</h2>
-
             <div class="price__table about__main">
-                <div class="price__element about__icons">
+                <div id="price__element" class="about__icons">
                     <p class="price__name">Workshops</p>
                     <p class="price__name__bold">Clases gratuitas</p>
                     <h3 class="price__price">$0</h3>
 
-                    <div>
+                    <div class="price__curses">
                         <p class="price__features">Introducción a la Programación</p>
                         <p class="price__features">Introducción al Diseño UX/UI</p>
                         <p class="price__features">Introducción a Data Analytics</p>
@@ -159,13 +158,12 @@
                     <a href="https://www.coderhouse.com/" target="_blank" class="price__cta">Empieza ahora</a>
                 </div>
 
-
-                <div class="price__element about__icons">
+                <div id="price__element" class="about__icons">
                     <p class="price__name">Cursos</p>
                     <p class="price__name__bold">Hasta 6 cuotas sin interés</p>
                     <h3 class="price__price">Hasta $6317 Ars/mes</h3>
 
-                    <div>
+                    <div class="price__curses">
                         <p class="price__features">Desarrollo Web</p>
                         <p class="price__features">Diseño UX/UI</p>
                         <p class="price__features">Ciberseguridad</p>
@@ -175,12 +173,12 @@
                 </div>
 
 
-                <div class="price__element about__icons">
+                <div id="price__element" class="about__icons">
                     <p class="price__name">Carreras</p>
                     <p class="price__name__bold">Hasta 12 cuotas sin interés</p>
                     <h3 class="price__price">Hasta $16844 Ars/mes</h3>
 
-                    <div>
+                    <div class="price__curses">
                         <p class="price__features">Programación y Desarrollo</p>
                         <p class="price__features">Desarrollo UX/UI</p>
                         <p class="price__features">Data</p>
@@ -192,18 +190,16 @@
 
             </div>
         </section>
-
+        <!-- Comienzo de Section Testimony -->
         <section class="testimony">
             <div class="testimony__container contenedor">
                 <img src="../assets/img/left-arrow-slide.svg" class="testimony__arrow" id="before">
 
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__texts">
-                        <h2 class="testimony__subtitle">Mi nombre es John Doe,<span class="testimony__course">estudiante de la carrera FullStack</span>
+                        <h2 class="testimony__subtitle">Mi nombre es John Doe,<span class="testimony__course">Estudiante de la carrera FullStack</span>
                         </h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem
-                            blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!
+                        <p class="testimony__review">Haber estudiado en Coderhouse ha sido una experiencia increible. Tanto el contenido del curso como la pericia de los profesores y los tutores, además de mis compañeros de cursada, ha hecho de este proceso de aprendizaje, un camino ameno del que me llevo futuros colegas y amigos.
                         <p>
                     </div>
 
@@ -212,12 +208,10 @@
                     </figure>
                 </section>
 
-                <section class="testimony__body" data-id="2">
+                <section class="testimony__body" .testimony__body--show data-id="2">
                     <div class="testimony__texts">
                         <h2 class="subtitle">Mi nombre es Jane Doe, <span class="testimony__course">Estudiante de Desarrollo UX/UI</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
-                            voluptatum!</p>
+                        <p class="testimony__review">¡Feliz de haber culminado mi primer curso de UX/UI en Coderhouse! Fue una experiencia desafiante pero gratificante, llena de aprendizaje.</p>
                     </div>
 
                     <figure class="testimony__picture">
@@ -225,11 +219,10 @@
                     </figure>
                 </section>
 
-                <section class="testimony__body" data-id="3">
+                <section class="testimony__body .testimony__body--show" data-id="3">
                     <div class="testimony__texts">
                         <h2 class="subtitle">Mi nombre es Charles Doe, <span class="testimony__course">Estudiante de Data</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                        <p class="testimony__review">Sin duda, estudiar en Coderhouse, fue una gran experiencia que me permitió adquirir nuevos conocimientos y seguir capacitándome. No quiero dejar de agradecer a los profesores y tutores que me hay guiado en este proceso.</p>
                     </div>
 
                     <figure class="testimony__picture">
@@ -237,11 +230,10 @@
                     </figure>
                 </section>
 
-                <section class="testimony__body" data-id="4">
+                <section class="testimony__body .testimony__body--show" data-id="4">
                     <div class="testimony__texts">
                         <h2 class="subtitle">Mi nombre es Sarahi Doe, <span class="testimony__course">Estudiante de Producto</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                        <p class="testimony__review">Objetivo cumplido! Mi primera experiencia como alumno de Coder fue con este curso de Product Manager súper recomendable para aquellos que quieren dar sus primeros pasos en el área de Product. Vamos por más! </p>
                     </div>
 
                     <figure class="testimony__picture">
@@ -251,7 +243,8 @@
 
                 <img src="../assets/img/right-arrow-slide.svg" class="testimony__arrow" id="next">
             </div>
-        </section>    
+        </section>   
+        <!-- Fin Section Testimony -->
     </main>
 <!-- Fin de Main -->
 

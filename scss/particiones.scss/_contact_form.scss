@@ -1,0 +1,71 @@
+.hero.contacto::before{
+    background-image: linear-gradient(180deg, #00000077 0%, #00000077 100%), url("../assets/img/fondo-hero-piedras.png");
+} 
+
+// Formulario Realizado con Bootstrap {
+
+
+.contenedor form {
+    max-width: 600px;
+    display: flex;
+    justify-content: $align_txt;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.row__center{
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle{
+    text-align: $align_txt;
+    font-size: 2rem;
+    }
+
+.form__paragraph{
+    text-align: $align_txt;
+    font-size: 1.25rem;
+}
+
+.form-label{
+    font-weight: 600;
+    color: $buttons_hov;
+    margin-top: 1.5rem;
+}
+
+.form-control {
+    border: 3px solid $buttons_hov;
+    border-radius: 16px;
+}
+
+.form__paragraph{
+    text-align: $align_txt;
+}
+
+.form-check{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: $buttons_hov;
+    font-weight: 600;
+}
+
+.form-check-input{
+    border: 3px solid $price;
+}
+
+.form-check-input[type=checkbox]:checked{
+    background-color: $price;
+}
+
+.form-check-input:checked{
+    border: 3px solid $buttons_hov;
+}
+
+.form-control:focus{
+    border: 3px outset #f54666;
+}
+
+
+
+/* Fin Section Contacto */

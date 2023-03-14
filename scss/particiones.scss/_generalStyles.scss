@@ -1,0 +1,27 @@
+
+*{
+    margin:0;
+	padding: 0;
+	border:0;
+	box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    &::selection{
+        background-color: $buttons;
+        color: $main_color;
+    }
+}
+
+
+body{
+    background-color: $background_main;
+    font-family: $font;
+
+    .contenedor{
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: $padding_cont;
+    }
+}

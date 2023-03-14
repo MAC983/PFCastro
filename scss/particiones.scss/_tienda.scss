@@ -1,0 +1,8 @@
+
+/*Hero Section Tienda*/
+.hero.tienda::before{
+    background-image: linear-gradient(180deg, #00000077 0%, #00000077 100%), url("../assets/img/thank-you-hero3.png");
+    background-repeat: no-repeat;
+    background-position: $align_txt;
+    background-attachment: fixed;
+} 

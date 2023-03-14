@@ -1,0 +1,49 @@
+/* Comienzo Section About */
+
+main{
+    .about{
+        text-align: $align_txt;
+        .subtitle{
+            color: $subtitle;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: $align_txt;
+        }
+        .about__paragraph{
+            line-height: 1.7;
+        }
+
+        .about__main{
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+            display: grid;
+            width: 90%;
+            margin: 0 auto;
+            gap: 2em;
+            grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+
+            .about__icons{
+                display: grid;
+                gap: 2em;
+                justify-items: $align_txt;
+                width: 15rem;
+                overflow: hidden;
+                margin: 1rem 0;
+                padding: 2rem 0.8rem;
+                background-color: $main_color;
+                border-radius: 10px;
+                box-shadow: $box_sdw2;
+
+                .about__icon{
+                    width: 40px;
+                }
+
+                .about__icon__plus{
+                    width: 30px;
+                }   
+            }
+        }
+    }
+}
+
+/* Fin Section About */
