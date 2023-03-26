@@ -4,64 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- LINKS-->
+    <!-- SCRIPT FA -->
+    <script src="https://kit.fontawesome.com/7a071f8154.js" crossorigin="anonymous"></script>
+    <!-- LINKS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../scss/styles.css">
-    <!-- <link rel="stylesheet" href="../css/backup.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/> -->
+    <!-- LINK FA -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>        
+    <!-- TITLE -->    
     <title>GC-GeekCode</title>
 </head>
 <body class="carrousel-container">
     <!-- Comienzo de Header -->
     <header class="hero productos">
-        <nav class="nav contenedor">
-            <div class="nav__logo">
+        <nav class="navbar__container">
+            <div class="navbar__link navbar__link-brand ">
                 <a href="../index.html#logo">
-                <img class="nav__title"  src="..//assets/img/logo-nav.png" alt="logo">
+                    <img class="img__logo" src="../assets/img/logo-nav.png" alt="">
                 </a>
             </div>
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="../index.html#logo" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../index.html#acercaDe" class="nav__links">Acerca de</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/productos.html#productos"  class="nav__links">Productos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./tienda.html" class="nav__links" target="">Tienda</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./cursos.html" class="nav__links" target="">Cursos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../soporte.html" class="nav__links" target="">Soporte</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../contacto.html" class="nav__links" target="">Contacto</a>
-                </li>
-
-                <img src="../assets/img/x-circle.svg" class="nav__close">
-            </ul>
-
-            <div class="nav__menu">
-                <img src="../assets/img/menu-hamburger.svg" class="nav__img">
+            <div class="navbar__link navbar__link-toggle">
+                <i class="fas fa-bars"></i>
             </div>
+            <ul class="navbar__items">
+                <li class="navbar__link">
+                    <a href="/index.html#hero" class="nav__links--footer">Inicio</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="/index.html#hero" class="nav__links--footer">Acerca de</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="../pages/productos.html" class="nav__links--footer" target="">Productos</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="../pages/tienda.html" class="nav__links--footer" target="">Tienda</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="../pages/cursos.html" class="nav__links--footer" target="">Cursos</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="../pages/soporte.html" class="nav__links--footer" target="">Soporte</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="../pages/contacto.html" class="nav__links--footer" target="">Contacto</a>
+                </li>
+            </ul>
         </nav>
 
         <section class="hero__container contenedor">
-            <h1 class="hero__title">SETUPS</h1>
+            <h1 class="hero__title">NUESTROS PRODUCTOS</h1>
             <p class="hero__paragraph">Te proponemos que navegues por nuestra propuesta de SetUps ya armados con los mejores productos, manteniendo la mejor relación calidad-precio y por sobre todo, la estética y funcionalidad. Nuestros expertos te asesorarán para que comiences a vivir la mejor experiencia en el mundo IT.</p>
             <p>Todo lo que soñás en un mismo lugar.</p>
-            <a href="#productos" class="cta">Comienza ahora</a>
+            <a href="./productos.html" class="cta">Comienza ahora</a>
         </section>
     </header>
     <!-- Fin de Header -->
+    <div class="hero__container contenedor">
+        <h3 class="hero__title">Setups</h3>
+        <p class="hero__paragraph">En esta sección podrás elegir entre setups completos o bien lo podés armar vos acorde a tu personalidad. Verás las características de cada uno.</p>
+    </div>
     <main class="contenedor">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -72,114 +75,115 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../assets/img/gaming-setup-1.png" class="d-block w-100" alt="setup gaming naranja/turquesa">
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/img/gaming-setup-1.png" class="d-block w-100" alt="setup gaming naranja/turquesa">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>SetUp Dark-Orange</h5>
+                        <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/gaming-setup-2.png" class="d-block w-100" alt="setup gaming turquesa">
                     <div class="carousel-caption d-none d-md-block">
-                    <h5>SetUp Dark-Orange</h5>
-                    <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                        <h5>SetUp Turquoise</h5>
+                        <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/gaming-setup-2.png" class="d-block w-100" alt="setup gaming turquesa">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>SetUp Turquoise</h5>
-                    <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                <div class="carousel-item">
+                    <img src="../assets/img/gaming-setup-4.png" class="d-block w-100" alt="setup gaming violeta">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SetUp Space-Sky</h5>
+                        <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/gaming-setup-4.png" class="d-block w-100" alt="setup gaming violeta">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>SetUp Space-Sky</h5>
-                    <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                <div class="carousel-item">
+                    <img src="../assets/img/gaming-setup-6-couple.png" class="d-block w-100" alt="setup gaming pareja1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SetUp Couple-1</h5>
+                        <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/gaming-setup-6-couple.png" class="d-block w-100" alt="setup gaming pareja1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>SetUp Couple-1</h5>
-                    <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                <div class="carousel-item">
+                    <img src="../assets/img/gaming-setup-7-couple.png" class="d-block w-100" alt="setup gaming pareja2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SetUp Couple2</h5>
+                        <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/gaming-setup-7-couple.png" class="d-block w-100" alt="setup gaming pareja2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>SetUp Couple2</h5>
-                    <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                <div class="carousel-item">
+                    <img src="../assets/img/gaming-setup-8-girly.png" class="d-block w-100" alt="setup gaming femenino1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SetUp Girly1</h5>
+                        <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/gaming-setup-8-girly.png" class="d-block w-100" alt="setup gaming femenino1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>SetUp Girly1</h5>
-                    <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                <div class="carousel-item">
+                    <img src="../assets/img/gaming-setup-10-girly.png" class="d-block w-100" alt="setup gaming femenino2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SetUp Girly2</h5>
+                        <p>Este SetUp puede ser personalizado en variedad de colores.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/gaming-setup-10-girly.png" class="d-block w-100" alt="setup gaming femenino2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>SetUp Girly2</h5>
-                    <p>Este SetUp puede ser personalizado en variedad de colores.</p>
                 </div>
-            </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>    
+        </div>            
     </main>
-    <!-- Comienzo de Footer -->
+    <!-- Comienzo de Footer --> 
     <footer class="footer">
-    <section class="footer__container contenedor">
-        <nav class="nav nav--footer">
-            <h2 class="footer__title">Contáctanos</h2>
-            <ul class="nav__link nav__link--footer">
-                <li class="nav__items">
-                    <a href="../index.html#logo" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../index.html#acercaDe" class="nav__links">Acerca de</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/productos.html" class="nav__links" target="">Productos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/tienda.html" class="nav__links" target="">Tienda</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/cursos.html" class="nav__links" target="">Cursos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/soporte.html" class="nav__links" target="">Soporte</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/contacto.html" class="nav__links" target="">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <form class="footer__form">
-            <h2 class="footer__newsletter">Suscríbete nuestro Newsletter</h2>
-            <div class="footer__inputs">
-                <input type="email" placeholder="tuemail@email.com" class="footer__input">
-                <input type="submit" value="Regístrate" class="footer__submit">
+        <section class="footer__container contenedor">
+            <nav class="nav nav__footer">
+                <h2 class="footer__title">Contáctanos</h2>
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#hero" class="nav__links--footer">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#acercaDe" class="nav__links--footer">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./pages/productos.html" class="nav__links--footer" target="">Productos</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./pages/tienda.html" class="nav__links--footer" target="">Tienda</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./pages/cursos.html" class="nav__links--footer" target="">Cursos</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./pages/soporte.html" class="nav__links--footer" target="">Soporte</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./pages/contacto.html" class="nav__links--footer" target="">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer__form">
+                <h2 class="footer__newsletter">Suscríbete nuestro Newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="tuemail@email.com" class="footer__input">
+                    <input type="submit" value="Regístrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-youtube fa-xl"></i></a>
             </div>
-        </form>
-    </section>
-    <section class="footer__copy contenedor">
-        <div class="footer__social">
-            <a href="#" class="footer__icons"><img src="../assets/img/facebook.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../assets/img/twitter.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../assets/img/instagram.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../assets/img/youtube.svg" class="footer__img"></a>
-        </div>
-        <h3 class="footer__copyright">Derechos reservados &copy; MAC983</h3>
-    </section>
+            <h3 class="footer__copyright">Derechos reservados 2023 &copy; MAC983</h3>
+        </section>
     </footer>
 <!-- Fin de Footer -->
 

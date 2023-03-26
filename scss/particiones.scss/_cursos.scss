@@ -18,11 +18,14 @@
     >.subtitle{
     margin-top: 1rem;
     padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    color: $buttons;
     }
 
     .price__table{
         padding-top: 3.75rem;
-        display: flex;
+        // display: flex;
         flex-wrap: wrap;
         gap: 2.5rem;
         justify-content: space-evenly;
@@ -37,7 +40,7 @@
             overflow: hidden;
             margin: 1rem 0;
             padding: 2rem 0.8rem;
-            background-color: $main_color;
+            // background_color: $main_color;
             border-radius: 10px;
             box-shadow: -5px -5px 30px 18px rgba(69, 40, 94, 0.397);
 
@@ -46,6 +49,7 @@
                 font-size: 2rem;
                 font-weight: 600;
             }
+            
             
             .price__name__bold{
                 font-size: 1rem;
@@ -88,6 +92,9 @@
                 }
             }
 
+            &:hover>.price__name{
+                color: $main_color;
+            }
         }
     }
 }

@@ -4,55 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- SCRIPT FA -->
+    <script src="https://kit.fontawesome.com/7a071f8154.js" crossorigin="anonymous"></script>
     <!-- LINKS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../scss/styles.css">
-    <!-- <link rel="stylesheet" href="../css/backup.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/> -->
+    <!-- LINK FA -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- TITLE -->
     <title>GC-GeekCode</title>
 </head>
 <body>
 <!-- Comienzo de Header -->
     <header class="hero tienda">
-        <nav class="nav contenedor">
-            <div class="nav__logo">
-                <a href="../index.html">
-                <img class="nav__title"  src="../assets/img/logo-nav.png" alt="logo">
+        <nav class="navbar__container">
+            <div class="navbar__link navbar__link-brand ">
+                <a href="/index.html#logo">
+                    <img class="img__logo" src="../assets/img/logo-nav.png" alt="">
                 </a>
             </div>
-
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="../index.html#logo" class="nav__links" target="">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../index.html#acercaDe" class="nav__links" target="">Acerca de</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./productos.html" class="nav__links" target="">Productos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./tienda.html#tienda" class="nav__links" target="">Tienda</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./cursos.html" class="nav__links" target="">Cursos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./soporte.html" class="nav__links" target="">Soporte</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./contacto.html" class="nav__links" target="">Contacto</a>
-                </li>
-
-                <img src="./assets/img/x-circle.svg" class="nav__close">
-            </ul>
-
-            <div class="nav__menu">
-                <img src="./assets/img/menu-hamburger.svg" class="nav__img">
+            <div class="navbar__link navbar__link-toggle">
+                <i class="fas fa-bars"></i>
             </div>
+            <ul class="navbar__items">
+                <li class="navbar__link">
+                    <a href="/index.html#hero" class="nav__links--footer">Inicio</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="/index.html#hero" class="nav__links--footer">Acerca de</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="../pages/productos.html" class="nav__links--footer" target="">Productos</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="../pages/tienda.html#tienda" class="nav__links--footer" target="">Tienda</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="../pages/cursos.html" class="nav__links--footer" target="">Cursos</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="../pages/soporte.html" class="nav__links--footer" target="">Soporte</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="../pages/contacto.html" class="nav__links--footer" target="">Contacto</a>
+                </li>
+            </ul>
         </nav>
 
         <section class="hero__container contenedor">
@@ -70,77 +68,77 @@
             <p class="about__paragraph">Agregá todos los productos que más te gusten y realizá el pago a través de todos los medios de pago.</p>
             <div class="about__main">
                 <article class="about__icons">
-                    <img src="../assets/img/learning.svg" class="about__icon">
+                    <span><i class="fas fa-solid fa-house-laptop fa-xl about__icon"></i></span>
                     <h3 class="about__title">SetUps</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore porro eius facilis?</p>
                     <a href="#">
-                        <img src="../assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a>
                 </article>
 
                 <article class="about__icons">
-                    <img src="../assets/img/headset.svg" class="about__icon">
+                    <span><i class="fas fa-solid fa-headphones-simple fa-xl"></i></span>
                     <h3 class="about__title">Headsets</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
                         porro eius facilis?</p>
                     <a href="#">
-                        <img src="../assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a> 
                 </article>
 
                 <article class="about__icons">
-                    <img src="../assets/img/microfono.svg" class="about__icon">
+                    <span><i class="fas fa-solid fa-microphone-lines fa-xl"></i></span>
                     <h3 class="about__title">Micrófonos</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
                         porro eius facilis?</p>
                     <a href="#">
-                        <img src="../assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a>
                 </article>
 
                 <article class="about__icons">
-                    <img src="../assets/img/teclado.svg" class="about__icon">
+                    <span><i class="fas fa-solid fa-keyboard fa-xl"></i></span>
                     <h3 class="about__title">Teclados</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
                         porro eius facilis?</p>
                     <a href="#">
-                        <img src="../assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a>
                 </article>
                 <article class="about__icons">
-                    <img src="../assets/img/mouse.svg" class="about__icon">
+                    <span><i class="fas fa-solid fa-computer-mouse fa-xl"></i></span>
                     <h3 class="about__title">Mouse</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
                         porro eius facilis?</p>
                     <a href="#">
-                        <img src="../assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a>
                 </article>  
                 <article class="about__icons">
-                    <img src="../assets/img/monitor.svg" class="about__icon">
+                    <span><i class="fas fa-solid fa-desktop fa-xl"></i></span>
                     <h3 class="about__title">Monitores</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
                         porro eius facilis?</p>
                     <a href="#">
-                        <img src="../assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a>
                 </article> 
                 <article class="about__icons">
-                    <img src="../assets/img/gaming.svg" class="about__icon">
+                    <span><i class="fas fa-solid fa-gamepad fa-xl"></i></span>
                     <h3 class="about__title">Sillas Gamer</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
                         porro eius facilis?</p>
                     <a href="#">
-                        <img src="../assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a>
                 </article> 
                 <article class="about__icons">
-                    <img src="../assets/img/learn.svg" class="about__icon">
+                    <span><i class=" fas fa-thin fa-graduation-cap fa-xl about__icon"></i></span>
                     <h3 class="about__title">Cursos</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
                         porro eius facilis?</p>
                     <a href="#">
-                        <img src="../assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a>
                 </article>
             </div>
@@ -149,50 +147,50 @@
 <!-- Fin de Main -->
 <!-- Comienzo de Footer -->
     <footer class="footer">
-    <section class="footer__container contenedor">
-        <nav class="nav nav--footer">
-            <h2 class="footer__title">Contáctanos</h2>
-            <ul class="nav__link nav__link--footer">
-                <li class="nav__items">
-                    <a href="../index.html#logo" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../index.html#acercaDe" class="nav__links">Acerca de</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/productos.html" class="nav__links" target="">Productos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/tienda.html" class="nav__links" target="">Tienda</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/cursos.html" class="nav__links" target="">Cursos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/soporte.html" class="nav__links" target="">Soporte</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../pages/contacto.html" class="nav__links" target="">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <form class="footer__form">
-            <h2 class="footer__newsletter">Suscríbete nuestro Newsletter</h2>
-            <div class="footer__inputs">
-                <input type="email" placeholder="tuemail@email.com" class="footer__input">
-                <input type="submit" value="Regístrate" class="footer__submit">
+        <section class="footer__container contenedor">
+            <nav class="nav nav__footer">
+                <h2 class="footer__title">Contáctanos</h2>
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#hero" class="nav__links--footer">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#acercaDe" class="nav__links--footer">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./pages/productos.html" class="nav__links--footer" target="">Productos</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./pages/tienda.html" class="nav__links--footer" target="">Tienda</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./pages/cursos.html" class="nav__links--footer" target="">Cursos</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./pages/soporte.html" class="nav__links--footer" target="">Soporte</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./pages/contacto.html" class="nav__links--footer" target="">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer__form">
+                <h2 class="footer__newsletter">Suscríbete nuestro Newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="tuemail@email.com" class="footer__input">
+                    <input type="submit" value="Regístrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-youtube fa-xl"></i></a>
             </div>
-        </form>
-    </section>
-    <section class="footer__copy contenedor">
-        <div class="footer__social">
-            <a href="#" class="footer__icons"><img src="../assets/img/facebook.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../assets/img/twitter.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../assets/img/instagram.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="../assets/img/youtube.svg" class="footer__img"></a>
-        </div>
-        <h3 class="footer__copyright">Derechos reservados &copy; MAC983</h3>
-    </section>
+            <h3 class="footer__copyright">Derechos reservados 2023 &copy; MAC983</h3>
+        </section>
     </footer>
 <!-- Fin de Footer -->
 

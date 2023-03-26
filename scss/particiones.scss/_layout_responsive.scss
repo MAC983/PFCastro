@@ -1,0 +1,45 @@
+@media only screen and (max-width: 768px){
+
+    .navbar__container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navbar__link-brand .img__logo img{
+        width: 6rem;
+        padding-bottom: 1rem;
+        z-index: 1;
+    }
+
+    .navbar__items{
+        display:none;
+    }
+
+    .navbar__items--right {
+        margin-left:0;
+    }
+
+    .navbar__toggleShow{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background: $gradient_bc4;
+
+        margin:5rem 0 0 0;
+        padding:1rem 2rem;
+    }
+    .navbar__link{
+        align-self: flex-start;
+        display: initial;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .navbar__link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+    }
+}

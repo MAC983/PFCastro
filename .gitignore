@@ -1,1 +1,16 @@
-/C:\CODER\51315\proyecto_marinacastro\package.json
+#Ignorar package.json
+\C:\CODER\51315\proyecto_marinacastro\package.json  
+
+#ignorar archivos prueba
+\nav_prueba2.html
+\nav_prueba.html
+
+#ignorar archivos scss
+\_nav_prueba.scss
+\_nav_prueba2.scss
+
+
+#ignorar archivos de carpeta extras
+\_card.scss
+\card.html
+

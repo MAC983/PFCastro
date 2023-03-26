@@ -1,0 +1,32 @@
+/* Section banner */
+
+.banner{
+    background-color: $main_color;
+    background: $gradient_bc2;
+}
+
+.banner__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: $align_txt;
+}
+
+.banner__picture{
+    max-width: 500px;
+}
+
+.banner__img{
+    width: 100%;
+    display: block;
+}
+
+.banner__paragraph{
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.banner__texts{
+    font-size: 1em;
+    line-height: 1.7;
+} 

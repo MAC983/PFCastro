@@ -4,56 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- SCRIPT FA -->
+    <script src="https://kit.fontawesome.com/7a071f8154.js" crossorigin="anonymous"></script>
     <!-- LINKS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./scss/styles.css">
-    <!-- <link rel="stylesheet" href="./css/backup.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/> -->
+    <!-- LINK FA -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
 
     <title>GC-GeekCode</title>
 </head>
 <body>
     <!-- Comienzo de Header -->
     <header class="hero">
-        <nav class="nav contenedor">
-            <div class="nav__logo">
-                <a href="#acercaDe">
-                    <img class="nav__title" src="./assets/img/logo-nav.png" alt="logo">
+        <nav class="navbar__container">
+            <div class="navbar__link navbar__link-brand ">
+                <a href="../index.html#logo">
+                    <img class="img__logo" src="./assets/img/logo-nav.png" alt="">
                 </a>
             </div>
-
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="#hero" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#acercaDe" class="nav__links">Acerca de</a>
-                </li>
-                <li class="nav__items">
-                    <a href="/pages/productos.html" class="nav__links" target="">Productos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./pages/tienda.html" class="nav__links" target="">Tienda</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./pages/cursos.html" class="nav__links" target="">Cursos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./pages/soporte.html" class="nav__links" target="">Soporte</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./pages/contacto.html" class="nav__links" target="">Contacto</a>
-                </li>
-
-                <img src="./assets/img/x-circle.svg" class="nav__close">
-            </ul>
-
-            <div class="nav__menu">
-                <img src="./assets/img/menu-hamburger.svg" class="nav__img">
+            <div class="navbar__link navbar__link-toggle">
+                <i class="fas fa-bars"></i>
             </div>
+            <ul class="navbar__items">
+                <li class="navbar__link">
+                    <a href="#hero" class="nav__links--footer">Inicio</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="#acercaDe" class="nav__links--footer">Acerca de</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="./pages/productos.html" class="nav__links--footer" target="">Productos</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="./pages/tienda.html" class="nav__links--footer" target="">Tienda</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="./pages/cursos.html" class="nav__links--footer" target="">Cursos</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="./pages/soporte.html" class="nav__links--footer" target="">Soporte</a>
+                </li>
+                <li class="navbar__link">
+                    <a href="./pages/contacto.html" class="nav__links--footer" target="">Contacto</a>
+                </li>
+            </ul>
         </nav>
 
         <section id="hero" class="hero__container contenedor">
@@ -75,40 +73,40 @@
 
             <div class="about__main">
                 <article class="about__icons">
-                    <img src="./assets/img/products.svg" class="about__icon">
+                    <span><i class="fas fa-sharp fa-light fa-music fa-xl about__icon"></i></span>
                     <h3 class="about__title">Productos</h3>
                     <p class="about__paragrah">En esta sección podrás elegir entre setups completos o bien lo podés armar vos acorde a tu personalidad. Verás las características de cada uno.</p>
                     <a href="./pages/productos.html">
-                        <img src="./assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a>
                 </article>
 
                 <article class="about__icons">
-                    <img src="./assets/img/e-store.svg" class="about__icon">
+                    <span><i class="fas fa-light fa-store fa-xl about__icon"></i></span>
                     <h3 class="about__title">Tienda</h3>
                     <p class="about__paragrah">En esta sección podrás encontrar todos nuestros productos y proceder con la compra.
                     </p>
                     <a href="./pages/tienda.html">
-                        <img src="./assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a> 
                 </article>
 
                 <article class="about__icons">
-                    <img src="./assets/img/learning.svg" class="about__icon">
+                    <span><i class="fas fa-thin fa-graduation-cap fa-xl about__icon"></i></span>
                     <h3 class="about__title">Cursos</h3>
                     <p class="about__paragrah">En esta sección podrás acceder a la variedad de cursos, carreras y másters que brinda Coderhouse.
                     </p>
                     <a href="./pages/cursos.html">
-                        <img src="./assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a>
                 </article>
 
                 <article class="about__icons">
-                    <img src="./assets/img/support.svg" class="about__icon">
+                    <span><i class="fas fa-solid fa-headset fa-xl"></i></span>
                     <h3 class="about__title">Soporte</h3>
                     <p class="about__paragrah">En esta sección podrás acceder a nuestro centro de soporte donde podrás canalizar todas tus dudas.</p>
                     <a href="./pages/soporte.html">
-                        <img src="./assets/img/plus.svg" class="about__icon about__icon__plus">
+                        <span><i class="fas fa-regular fa-circle-plus fa-xl about__icon__plus"></i></span>
                     </a>
                 </article>
             </div>
@@ -133,7 +131,7 @@
     <!-- Comienzo de Footer -->
     <footer class="footer">
         <section class="footer__container contenedor">
-            <nav class="nav nav--footer">
+            <nav class="nav nav__footer">
                 <h2 class="footer__title">Contáctanos</h2>
                 <ul class="nav__link nav__link--footer">
                     <li class="nav__items">
@@ -169,21 +167,20 @@
         </section>
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="#" class="footer__icons"><img src="./assets/img/facebook.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./assets/img/twitter.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./assets/img/instagram.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./assets/img/youtube.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-youtube fa-xl"></i></a>
             </div>
-            <h3 class="footer__copyright">Derechos reservados &copy; MAC983</h3>
+            <h3 class="footer__copyright">Derechos reservados 2023 &copy; MAC983</h3>
         </section>
     </footer>
     <!-- Fin de Footer -->
 
-    <!-- Futuras funcionalidades de JS Scripts -->
+    <!-- Funcionalidades de JS Scripts -->
+    <script src="./js/menu.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
-    <script src="./js/menu.js"></script>
-
 </body>
 </html>

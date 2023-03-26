@@ -3,14 +3,20 @@
 main{
     .about{
         text-align: $align_txt;
+        color: $main_colorbk;
+
         .subtitle{
-            color: $subtitle;
             font-size: 2.5rem;
             margin-bottom: 2rem;
             text-align: $align_txt;
+            color: $subtitle;
+            font-weight: 600;
         }
+        
         .about__paragraph{
             line-height: 1.7;
+            margin-bottom: 2rem;
+            font-weight: 600;
         }
 
         .about__main{
@@ -20,7 +26,9 @@ main{
             width: 90%;
             margin: 0 auto;
             gap: 2em;
+            // font-size: 1.5rem;
             grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+            justify-content: center;
 
             .about__icons{
                 display: grid;
@@ -32,18 +40,37 @@ main{
                 padding: 2rem 0.8rem;
                 background-color: $main_color;
                 border-radius: 10px;
-                box-shadow: $box_sdw2;
-
-                .about__icon{
-                    width: 40px;
+                box-shadow: $box_sdw1;
+                cursor: default;
+                transition: all 400ms ease;
+                color: $main_colorbk;
+                font-size: 400!important;
+                
+                .about__icon .fas i{
+                    // width: 2rem;
+                    font-size: 1rem;
                 }
 
                 .about__icon__plus{
                     width: 30px;
-                }   
-            }
+                    color: $main_colorbk;
+                }
+
+                &:hover{
+                    box-shadow: $box_sdw3;
+                    transform: translateY(-3%);
+                    background: $gradient_bc5;
+                    color: $main_color;
+                    
+                    .about__icon__plus{
+                        color: $main_color;
+                    }
+                }
+            } 
+            
         }
     }
 }
+
 
 /* Fin Section About */
